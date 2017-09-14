@@ -170,7 +170,8 @@ nav div:first-child h1, nav ul {
 .portfolio h3 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-  font-size: 140%;
+  font-size: 200%;
+  padding-top: 20px;
 }
 
 .innerPort {

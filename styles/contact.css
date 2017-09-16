@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Riley');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+
 html, body {
   margin: 0;
   padding: 0;
@@ -10,10 +11,16 @@ html, body {
   font-size: 16px;
 }
 
+body {
+  text-align: center;
+}
+
 nav {
   position: fixed;
   width: 100%;
+
 }
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -23,7 +30,7 @@ nav ul {
 nav ul li a {
   color: #ddd;
   text-decoration: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Space Mono', sans-serif;
   text-transform: uppercase;
   padding: .8rem 1rem;
   display: block;
@@ -99,10 +106,67 @@ nav div:first-child h1, nav ul {
   }
 }
 
-.contactForm {
-    display: inline-block;
-    margin-top: 60px;
+
+
+.contactBanner {
+  height: 20%;
+  width: 100%;
+  margin: auto;
+  background-color: lightgrey;
+  display: table;
+  top: 0;
+  background-size: cover;
 }
+
+.contactBanner h3 {
+  color: black;
+  font-family: 'Space Mono', sans-serif;
+  font-size: 250%;
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.contactForm {
+  float: left;
+  width: 100%;
+}
+
+.contactForm input {
+  width: 50%;
+  margin-top: 20px;
+  line-height: 25px;
+  color: lightblue;
+}
+
+.contactForm textarea {
+  width: 85%;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
   background-color: #FFF;
@@ -110,7 +174,8 @@ footer {
   letter-spacing: 1px;
   margin-top: -20px;
   padding: 10px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Space Mono', sans-serif;
+  text-transform: uppercase;
   text-align: left;
   font-size: 90%;
 }

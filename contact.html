@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="icon" href="assets/mLogo.png">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -17,20 +19,25 @@
       </script>
 </head>
 <body>
-    <nav>
+    <div>
+      <nav>
       <div>
-        <h1><a class="navLogo" href="index.html"><img src="assets/maxwellLogo.png"></a></h1>
+        <h1><a class="navLogo" href="index.html"><img src="assets/maxLogoAgain.png" alt="name logo" style="width:300px"></a></h1>
       </div>
       <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="index.html#portfolioLink">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
-
+      </nav>
+    </div>
+    <div class="contactBanner">
+      <h3>Send a message</h3>
+    </div>
     <form class="contactForm" action="https://getsimpleform.com/messages?form_api_token=232629169fa79b357873c605a2f61081" method="post">
-      <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-      <!-- #2 -->
+      <h3>Thanks so much for your interest</h3>
+      <p>Questions?  Looking for support?  Please don't hesitate to contact me!</p>
+      <h2>Contact Form</h2>
       <input type='hidden' name='redirect_to' value='http://maxwelltmorgan.github.io/thank-you/' />
       <input type='text' name='name' placeholder='Your Full Name' />
       <input type='email' name='email' placeholder='Your E-mail Address' />

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Riley');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+
 html, body {
   margin: 0;
   padding: 0;
@@ -10,10 +11,16 @@ html, body {
   font-size: 16px;
 }
 
+body {
+  text-align: center;
+}
+
 nav {
   position: fixed;
   width: 100%;
+
 }
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -23,7 +30,7 @@ nav ul {
 nav ul li a {
   color: #ddd;
   text-decoration: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Space Mono', sans-serif;
   text-transform: uppercase;
   padding: .8rem 1rem;
   display: block;
@@ -110,7 +117,8 @@ footer {
   letter-spacing: 1px;
   margin-top: -20px;
   padding: 10px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Space Mono', sans-serif;
+  text-transform: uppercase;
   text-align: left;
   font-size: 90%;
 }

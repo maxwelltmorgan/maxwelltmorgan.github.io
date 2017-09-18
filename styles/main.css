@@ -182,6 +182,7 @@ nav div:first-child h1, nav ul {
 
 .portfolio {
   background: lightgrey;
+  font-family: 'Space Mono', sans-serif;
 }
 
 .portfolio h3 {

@@ -13,6 +13,7 @@ html, body {
 
 body {
   text-align: center;
+  font-family: 'Space Mono', sans-serif;
 }
 
 nav {
@@ -130,49 +131,54 @@ nav div:first-child h1, nav ul {
 
 .contactForm {
   float: left;
+  text-align: left;
+  padding-left: 20px;
   width: 100%;
 }
 
 .contactForm input {
-  width: 50%;
+  display: block;
+  width: 40%;
   margin-top: 20px;
   line-height: 25px;
   color: lightblue;
 }
 
 .contactForm textarea {
-  width: 85%;
+  width: 40%;
   margin-top: 20px;
 }
 
+.contactForm .subBtn {
+  width: 15%;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  margin-bottom: 60px;
+}
 
+.contactForm .subBtn:hover {
+  background-color: #3771C8;
+}
 
+.contactForm h3 {
+  color: #3771C8;
+  font-size: 170%;
+  margin-bottom: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contactForm p {
+  color: #3771C8;
+  margin-top: 0;
+  border-bottom: 2px solid lightgrey;
+  width: 90%;
+}
 
 footer {
   background-color: #FFF;
   color: #C5C1C0;
   letter-spacing: 1px;
-  margin-top: -20px;
+
   padding: 10px;
   font-family: 'Space Mono', sans-serif;
   text-transform: uppercase;

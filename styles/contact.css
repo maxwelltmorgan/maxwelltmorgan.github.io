@@ -164,13 +164,17 @@ nav div:first-child h1, nav ul {
 .contactForm .subBtn {
   width: 15%;
   color: white;
-  background-color: red;
+  background-color: #3771C8;
   border-radius: 5px;
   margin-bottom: 60px;
 }
 
 .contactForm .subBtn:hover {
-  background-color: #3771C8;
+  background-color: darkblue;
+}
+
+.contactForm .subBtn:active {
+  background-color: lightgrey;
 }
 
 .contactForm h3 {
@@ -184,6 +188,7 @@ nav div:first-child h1, nav ul {
   margin-top: 0;
   border-bottom: 2px solid lightgrey;
   width: 90%;
+  line-height: 50px;
 }
 
 footer {

@@ -1,0 +1,54 @@
+.container {
+  display: grid;
+  margin: auto;
+  grid-template-areas: "header header header header"
+                       "hero hero hero contact"
+                       "work work work work"
+                       "form form form form"
+                       "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 600px auto 400px 100px;
+}
+
+header {
+  background-color: dodgerblue;
+  grid-area: header;
+}
+
+header h1,
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+.pageLink {
+  color: pink;
+}
+
+.hero {
+  background: url("../assets/parisTunnel.jpeg");
+  grid-area: hero;
+}
+
+.contact {
+  background-color: limegreen;
+  grid-area: contact;
+}
+
+.work {
+  background-color: dodgerblue;
+  grid-area: work;
+}
+
+.form {
+  background-color: limegreen;
+  grid-area: form;
+}
+
+footer {
+  background-color: dodgerblue;
+  grid-area: footer;
+}

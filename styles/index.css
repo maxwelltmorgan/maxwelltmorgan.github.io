@@ -1,18 +1,38 @@
+html body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+body {
+  background-color: #F7F5E6;
+  min-width: 600px;
+}
+
 .container {
   display: grid;
   margin: auto;
   grid-template-areas: "header header header header"
-                       "hero hero hero contact"
+                       "hero hero hero hero"
+                       "contact contact contact contact"
+                       "workhead workhead workhead workhead"
+                       "work work work work"
+                       "work work work work"
                        "work work work work"
                        "form form form form"
                        "footer footer footer footer";
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 600px auto 400px 100px;
+  grid-template-rows: 80px 600px auto auto auto auto auto 400px 100px;
 }
 
 header {
-  background-color: dodgerblue;
+  background-color: #333A56;
   grid-area: header;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  font-weight: 400;
 }
 
 header h1,
@@ -20,35 +40,163 @@ header ul {
   display: inline-block;
 }
 
-header ul li {
-  display: inline-block;
+header h1 {
+  margin-left: 20px;
+}
+header ul {
+  float: right;
+  margin-right: 20px;
+  padding-top: 15px;
 }
 
-.pageLink {
-  color: pink;
+header ul li {
+  display: inline-block;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #E8E8E8;
 }
 
 .hero {
   background: url("../assets/parisTunnel.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-area: hero;
+  padding: 1px 0 1px 0;
+}
+
+.heroText h2 {
+  font-size: 4rem;
+  color: white;
+}
+
+.heroText p {
+  padding: 5px;
+  width: 45%;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(0,0,0,.3);
+  border-radius: 5px;
 }
 
 .contact {
-  background-color: limegreen;
   grid-area: contact;
+  border-radius: 5px;
+  color: white;
+  text-align: left;
+  line-height: 0.75;
+  font-size: 0.85rem;
+  min-width: 275px;
+  width: 80%;
+  border-top: 15px solid lightgrey;
+  background-color: rgba(0,0,0,1);
+  padding: 10px;
+  margin: 15px auto;
+}
+
+.contact p {
+  padding-left: 25px;
+  font-family: "Courier New";
+}
+
+.indent {
+  margin-left: 20px;
+}
+
+.response {
+  color: limegreen;
 }
 
 .work {
-  background-color: dodgerblue;
   grid-area: work;
+  background-color: #E8E8E8;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center
+}
+
+.project {
+  flex-basis: 400px;
+  height: auto;
+  background-color: #5265BF;
+  margin: 20px;
+}
+
+.project img {
+  width: 80%;
+  padding: 10px;
+}
+
+#p1,
+#p4 {
+  background-color: #333A56;
+}
+
+#p2,
+#p5 {
+  background-color: #5265BF;
+}
+
+#p3,
+#p6 {
+  background-color: #F7F5E6;
+}
+
+.projectDescription {
+  background-color: #FEFFFF;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .form {
-  background-color: limegreen;
+  background-color: #F7F5E6;
+  color: #333A56;
   grid-area: form;
 }
 
 footer {
-  background-color: dodgerblue;
+  color: rgb(177, 177, 177);
+  border-top: 2px solid lightgrey;
   grid-area: footer;
+  font-size: .8rem;
+  background-color: #F7F5E6;
+  border-radius: 0 0 5px 5px;
+  padding-top: 30px;
 }
+
+footer p {
+  display: inline-block;
+}
+
+#ownership {
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.handles {
+  font-weight: 400;
+  float: right;
+  word-spacing: 10px;
+  color: #5265BF;
+  padding-right: 20px;
+}
+
+
+/*
+#F7F5E6 cream background
+#333A56 dark blue text
+#5265BF light blue
+#E8E8E8 grey background
+#FEFFFF white
+*/

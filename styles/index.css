@@ -110,6 +110,13 @@ header ul li a {
   color: limegreen;
 }
 
+.portfolioTitle {
+  font-size: 2.3em;
+  letter-spacing: 7px;
+  color: #333A56;
+  text-align: center;
+}
+
 .work {
   grid-area: work;
   background-color: #E8E8E8;
@@ -122,13 +129,11 @@ header ul li a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center
 }
 
 .project {
   flex-basis: 400px;
   height: auto;
-  background-color: #5265BF;
   margin: 20px;
   list-style: none;
 }
@@ -167,13 +172,15 @@ header ul li a {
 }
 
 footer {
-  color: rgb(177, 177, 177);
-  border-top: 2px solid lightgrey;
+  color: #333A56;
+  border-top: 1px solid #333A56;
   grid-area: footer;
   font-size: .8rem;
   background-color: #F7F5E6;
   border-radius: 0 0 5px 5px;
   padding-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 footer p {
@@ -182,7 +189,6 @@ footer p {
 
 #ownership {
   font-weight: 400;
-  padding-left: 20px;
 }
 
 .handles {
@@ -190,7 +196,6 @@ footer p {
   float: right;
   word-spacing: 10px;
   color: #5265BF;
-  padding-right: 20px;
 }
 
 

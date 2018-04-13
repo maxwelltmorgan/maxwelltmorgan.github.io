@@ -21,7 +21,7 @@ body {
                        "form form form form"
                        "footer footer footer footer";
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 80px 600px auto auto auto auto auto 400px 100px;
+  grid-template-rows: 80px 600px auto auto auto auto auto auto 100px;
 }
 
 header {
@@ -65,7 +65,7 @@ header ul li a {
   background-repeat: no-repeat;
   background-size: cover;
   grid-area: hero;
-  padding: 1px 0 1px 0;
+  padding: 10px;
 }
 
 .heroText h2 {
@@ -78,7 +78,7 @@ header ul li a {
   width: 45%;
   font-size: 1.5rem;
   color: white;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0,0,0,.5);
   border-radius: 5px;
 }
 
@@ -130,6 +130,7 @@ header ul li a {
   height: auto;
   background-color: #5265BF;
   margin: 20px;
+  list-style: none;
 }
 
 .project img {
@@ -200,3 +201,158 @@ footer p {
 #E8E8E8 grey background
 #FEFFFF white
 */
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+.formHeader {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+  color: #333A56;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #333A56;
+  border: solid 1px #333A56;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #E8E8E8;
+  color: #333A56;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #333A56;
+  font-size: 0.875em;
+  border: solid 1px #333A56;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #E8E8E8;
+  color: #333A56;
+}
+
+#submit {
+  width: 502px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-size: 0.875em;
+  color: #F7F5E6;
+  outline:none;
+  cursor: pointer;
+  border: solid 1px #333A56;
+  background-color: #333A56;
+  border-top: none;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+#submit:active {
+  background-color: #E8E8E8;
+  color: #333A56;
+  border-top: solid 1px #333A56;
+}

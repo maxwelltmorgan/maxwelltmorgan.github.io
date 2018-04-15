@@ -115,7 +115,7 @@ header:hover {
     padding-right: 0;
   }
   .container {
-    grid-template-rows: 120px 600px auto auto auto auto auto auto 100px;
+    grid-template-rows: 120px auto auto auto auto auto auto auto 100px;
   }
   .hero {
     margin-top: 90px;

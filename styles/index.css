@@ -45,7 +45,7 @@ header {
   width: 20%;
   vertical-align: middle;
   height: auto;
-  min-width: 60px;
+  min-width: 40px;
 }
 
 .headerCenter {
@@ -112,6 +112,8 @@ header {
     grid-template-rows: 120px 600px auto auto auto auto auto auto 100px;
   }
 }
+
+
 
 .hero {
   background: url("../assets/parisTunnel.jpeg");

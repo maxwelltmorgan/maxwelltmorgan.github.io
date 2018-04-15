@@ -21,7 +21,7 @@ body {
                        "form form form form"
                        "footer footer footer footer";
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 80px 600px auto auto auto auto auto auto 100px;
+  grid-template-rows: 60px 600px auto auto auto auto auto auto 100px;
 }
 
 header {
@@ -31,33 +31,86 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  margin: 0 auto;
-  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-header h1,
-header ul {
+.headerLeft {
+  width: 33%;
+  padding-left: 20px;
+}
+
+.headerLeft img {
+  width: 20%;
+  vertical-align: middle;
+  height: auto;
+  min-width: 60px;
+}
+
+.headerCenter {
+  display: inline;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.5rem;
+  width: 33%;
+}
+
+.headerRight {
+  padding-left: 25px;
+  width: 34%;
+  text-align: center;
+}
+
+.headerRight li {
   display: inline-block;
-}
-
-header h1 {
-  margin-left: 20px;
-}
-header ul {
-  float: right;
-  margin-right: 20px;
-  padding-top: 15px;
-}
-
-header ul li {
-  display: inline-block;
-  padding: 5px;
+  padding-left: 10px;
   text-transform: uppercase;
 }
 
-header ul li a {
+.headerRight li a {
   text-decoration: none;
-  color: #E8E8E8;
+  color: grey;
+}
+
+.headerRight li a:hover {
+  color: white;
+}
+
+@media (max-width: 1000px){
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerLeft {
+    width: 100%;
+    text-align: center;
+    max-width: 400px;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  .headerCenter {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .headerRight{
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: .9em;
+  }
+  .headerRight li a {
+    text-align: center;
+    padding-right: 0;
+  }
+  .container {
+    grid-template-rows: 120px 600px auto auto auto auto auto auto 100px;
+  }
 }
 
 .hero {

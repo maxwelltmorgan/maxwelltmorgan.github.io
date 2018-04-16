@@ -1,11 +1,12 @@
 html body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: #F7F5E6;
-  min-width: 600px;
+
 }
 
 .container {
@@ -21,6 +22,7 @@ body {
                        "form form form form"
                        "footer footer footer footer";
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
   grid-template-rows: 160px auto auto auto auto auto auto auto 100px;
 }
 
@@ -120,9 +122,13 @@ header:hover {
   .hero {
     margin-top: 90px;
   }
+  .projectDescription {
+    font-size: .85em;
+  }
+  .formHeader {
+    width: 100%;
+  }
 }
-
-
 
 .hero {
   background: url("../assets/parisTunnel.jpeg");
@@ -131,6 +137,7 @@ header:hover {
   grid-area: hero;
   padding: 10px;
   min-height: 600px;
+  width: 100%;
 }
 
 .heroText h2 {
@@ -181,6 +188,7 @@ header:hover {
   letter-spacing: 7px;
   color: #333A56;
   text-align: center;
+  width: 100%;
 }
 
 .work {
@@ -195,6 +203,8 @@ header:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 10px;
+  width: 100%;
 }
 
 .project {
@@ -421,6 +431,7 @@ textarea:hover {
 #submit:hover {
   cursor: pointer;
   border: 2px solid #5265BF;
+  background-color: #5265BF;
 }
 
 #submit:active {

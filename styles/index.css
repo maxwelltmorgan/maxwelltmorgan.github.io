@@ -371,29 +371,31 @@ textarea:hover {
   }
 
   .formHeader {
-    width: 80%;
     font-size: 1.8rem;
+    text-align: center;
   }
 
   .form {
     width: 100%;
-    padding-left: 40px;
   }
 
-  #name {
-    width: 60%;
+  #form {
+    width: 95%;
+    text-align: center;
   }
 
-  #email {
-    width: 60%;
+  input {
+    width: 80%;
   }
 
-  #message {
-    width: 60%;
+  textarea {
+    width: 80%;
+    max-width: none;
   }
 
   #submit {
-    width: 66.4%;
+    width: 88.5%;
+
   }
 
   .heroNot {

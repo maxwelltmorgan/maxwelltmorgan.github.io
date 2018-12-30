@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    width: 100vw;
+    font-family: 'Raleway';
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 50px;
+    position: fixed;
+    width: 100vw;
+}
+
+#logo {
+    width: 250px;
+    padding: 18px 0 0 20px;
+}
+
+#nav-links {
+    margin: 0;
+    padding-top: 15px;
+    float: right;
+    list-style: none;
+}
+
+.nav-link {
+    display: inline;
+    text-transform: uppercase;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-links {
+    visibility: hidden;
+  }
+}
+
+#home {
+    background-color: grey;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hello {
+    padding: 0 10px 0 10px;
+    font-size: 2.5rem;
+    font-weight: lighte;
+}
+
+#max {
+    color: darkblue;
+    font-weight: bold;
+}
+
+#work-button {
+    background-color: inherit;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px 5px 10px;
+}
+
+#about {
+    background-color: lightgrey;
+}
+
+#portfolio {
+    background-color: darkgrey;
+}
+
+#contact {
+    background-color: grey;
+}
+
+#contact-title {
+    margin: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+#author {
+    margin: 0;
+    line-height: 50px;
+    padding-left: 20px;
+    display: inline;
+    color: grey;
+    text-transform: uppercase;
+}
+
+#social-links {
+    margin: 0;
+    font-size: .8rem;
+    float: right;
+    list-style: none;
+}
+
+.social-link {
+    display: inline;
+    text-transform: uppercase;
+    padding-right: 20px;
+    line-height: 50px;
+}

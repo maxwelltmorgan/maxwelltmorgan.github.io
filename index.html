@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Max Portfolio Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
     <link rel="icon" href="assets/mmlogodark.png">
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
@@ -18,76 +18,59 @@
       ga('send', 'pageview');
       </script>
 </head>
+
 <body>
-    <nav>
-        <div>
-          <h1><a class="navLogo" href="index.html"><img src="assets/maxLogoAgain.png" alt="name logo" style="width:300px"></a></h1>
-        </div>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#portfolioLink">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-    </nav>
-    <section class="intro">
-      <div class="inner">
-        <div class="content">
-          <h1>Developer + Data Analyst + Dad</h1>
-          <p class="landingIntro">I'm a perpetual learner.  I'm a thinker and a problem solver.  I'm incredibly lucky.
-          <br>
-          <div class="btndiv">
-            <a class="btn" href="about.html">My Story</a>
-          </div>
-        </div>
-      </div>
-    </section>
-<!--
-    <section class="portfolio" id="portfolioLink">
-      <div class="innerPort">
-        <div class="contentPort">
-          <h3>Portfolio</h3>
-          <div class="projects" id="p1">
-            <a class="projectImage" href="#">
-              <img src="assets/blocJamsImage.png">
-            </a>
-            <p class="projectDescription">bloc jams is a music player</p>
-          </div>
-          <div class="projects" id="p2">
-            <a class="projectImage" href="#">
-              <img src="assets/underConstruction.png">
-            </a>
-            <p class="projectDescription">my second project</p>
-          </div>
-          <div class="projects" id="p3">
-            <a class="projectImage" href="#">
-              <img src="assets/underConstruction.png">
-            </a>
-            <p class="projectDescription">my third project</p>
-          </div>
-          <div class="projects" id="p4">
-            <a class="projectImage" href="#">
-              <img src="assets/underConstruction.png">
-            </a>
-            <p class="projectDescription">my fourth project</p>
-          </div>
-          <div class="projects" id="p5">
-            <a class="projectImage" href="#">
-              <img src="assets/underConstruction.png">
-            </a>
-            <p class="projectDescription">my fifth project</p>
-          </div>
-          <div class="projects" id="p6">
-            <a class="projectImage" href="#">
-              <img src="assets/underConstruction.png">
-            </a>
-            <p class="projectDescription">my sixth project</p>
-          </div>
-        </div>
-      </div>
-    </section>
--->
-    <footer>
-      <p>2017 Maxwell Torrence Morgan</p>
-    </footer>
+    <div id="container">
+        <header>
+            <div id="header-inner">
+                <a id="logo-anchor" href="#">
+                    <img id="logo" src="assets/maxLogoAgain.png" alt="logo">
+                </a>
+                <ul id="nav-links">
+                    <li class="nav-link">About</li>
+                    <li class="nav-link">Portfolio</li>
+                    <li class="nav-link">Contact</li>
+                </ul>
+            </div>
+        </header>
+        <!--HOME-->
+        <section class="flex" id="home">
+            <div class="flex">
+                <h1 id="hello">Hello, I'm <span id="max">Maxwell Morgan</span>. </br>I'm a Front-End Web Developer</h1>
+            </div>
+            <button id="work-button" type="button" name="button">View my work</button>
+        </section>
+        <!--ABOUT-->
+        <section id="about">
+            about
+        </section>
+        <!--PORTFOLIO-->
+        <section id="portfolio">
+            portfolio
+        </section>
+        <!--CONTACT-->
+        <section id="contact">
+            <h3 id="contact-title">Contact</h3>
+            <form class="contact-form" action="https://getsimpleform.com/messages?form_api_token=232629169fa79b357873c605a2f61081" method="post">
+                <h3>Have a question or want to work with me?</h3>
+                <input type='hidden' name='redirect_to' value='http://maxwelltmorgan.com/index.html' />
+                <input type='text' name='name' placeholder='Name' />
+                <input type='email' name='email' placeholder='Email' />
+                <textarea name='message' placeholder='Message...' textarea rows="10"></textarea>
+                <input class="submit-button" type='submit' value='Submit' />
+            </form>
+        </section>
+        <footer id="footer">
+            <p id="author">Maxwell Torrence Morgan ©2019</p>
+            <ul id="social-links">
+                <li class="social-link">linkdin</li>
+                <li class="social-link">github</li>
+                <li class="social-link">twitter</li>
+                <li class="social-link">instagram</li>
+            </ul>
+        </footer>
+    </div>
 </body>
+<script src="index.js"></script>
+
 </html>

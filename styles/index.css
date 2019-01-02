@@ -5,11 +5,12 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: #1B242F;
     color: white;
     height: 50px;
     position: fixed;
     width: 100vw;
+
 }
 
 #logo {
@@ -36,8 +37,21 @@ header {
   }
 }
 
+.section-header {
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #5f656d
+}
+
 #home {
-    background-color: grey;
+    background-image: url("../assets/dark_paris.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #313943;
     color: white;
     display: flex;
     text-align: center;
@@ -53,21 +67,26 @@ header {
 #hello {
     padding: 0 10px 0 10px;
     font-size: 2.5rem;
-    font-weight: lighte;
+    font-weight: lighter;
 }
 
 #max {
-    color: darkblue;
+    color: yellow;
     font-weight: bold;
 }
 
 #work-button {
-    background-color: inherit;
+    background-color: transparent;
     font-size: 1.8rem;
     font-weight: lighter;
     color: white;
     border: 2px solid white;
     padding: 5px 10px 5px 10px;
+}
+
+#work-button:hover {
+    background-color: dodgerblue;
+    border: dodgerblue solid 2px;
 }
 
 #about {
@@ -79,15 +98,50 @@ header {
 }
 
 #contact {
-    background-color: grey;
+    background-color: #313943;
 }
 
-#contact-title {
-    margin: 0;
+.contact-form {
+    color: #d1d3d5;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#form-tagline {
+    color: dodgerblue;
+}
+
+.form-line {
+    display: block;
+    margin: 0 auto 5px auto;
+    width: 60%;
+    min-width: 350px;
+    line-height: 40px;
+    font-size: 1.1rem;
+    background-color: #1b242f;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+
+#submit-button {
+    margin: 5px 0 10px 0;
+    line-height: 40px;
+    font-size: 1.1rem;
+    padding: 0 25px 0 25px;
+    text-transform: uppercase;
+    color: white;
+    border: white solid 2px;
+    background-color: inherit;
+}
+
+#submit-button:hover {
+    background-color: dodgerblue;
+    border: dodgerblue solid 2px;
 }
 
 footer {
-    background-color: black;
+    background-color: #1B242F;
     color: white;
     height: 50px;
 }
@@ -113,4 +167,10 @@ footer {
     text-transform: uppercase;
     padding-right: 20px;
     line-height: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+  #social-links {
+    visibility: hidden;
+  }
 }

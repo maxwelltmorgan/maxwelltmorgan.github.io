@@ -31,6 +31,14 @@ header {
     padding-right: 20px;
 }
 
+.nav-link:hover {
+    color: yellow;
+}
+
+.nav-link:active {
+    color: dodgerblue;
+}
+
 @media only screen and (max-width: 600px) {
   #nav-links {
     visibility: hidden;

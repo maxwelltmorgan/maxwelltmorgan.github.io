@@ -10,7 +10,7 @@ header {
     height: 50px;
     position: fixed;
     width: 100vw;
-
+    border-bottom: dodgerblue solid 1px;
 }
 
 #logo {
@@ -95,6 +95,114 @@ header {
 
 #portfolio {
     background-color: darkgrey;
+    padding-bottom: 40px;
+}
+
+#gallery {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    max-width: 1500px;
+}
+
+.gallery-item {
+    background-color: #374960;
+    border: dodgerblue dotted 1px;
+    padding: 60px;
+    display: inline-block;
+    width: 250px;
+    margin-top: 4px;
+}
+
+.gallery-item .gallery-inner {
+    visibility: hidden;
+}
+
+.gallery-item:hover .gallery-inner {
+    visibility: visible;
+}
+
+.gallery-item-title {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.gallery-item-description {
+    font-style: italic;
+    color: yellow;
+    font-size: .8rem;
+    padding-bottom: 40px;
+}
+
+.gallery-button {
+    margin: 5px 0 10px 0;
+    font-size: .8rem;
+    padding: 5px;
+    font-style: italic;
+    color: white;
+    border: white solid 2px;
+    background-color: transparent;
+}
+
+.gallery-button:hover {
+    background-color: dodgerblue;
+    border: dodgerblue solid 2px;
+}
+
+#project-1 {
+    background-image: url("../assets/crafted_sound.png");
+    background-size: cover;
+}
+
+#project-1:hover {
+    background-image: none;
+}
+
+#project-2 {
+    background-image: url("../assets/clever_conversations.jpg");
+    background-size: cover;
+}
+
+#project-2:hover {
+    background-image: none;
+}
+
+#project-3 {
+    background-image: url("../assets/nudge.jpg");
+    background-size: cover;
+}
+
+#project-3:hover {
+    background-image: none;
+}
+
+#project-4 {
+    background-image: url("../assets/weather.jpg");
+    background-size: cover;
+}
+
+#project-4:hover {
+    background-image: none;
+}
+
+#project-5 {
+    background-image: url("../assets/bookcase.jpg");
+    background-size: cover;
+}
+
+#project-5:hover {
+    background-image: none;
+}
+
+#project-6 {
+    background-image: url("../assets/tictactoe.jpg");
+    background-size: cover;
+}
+
+#project-6:hover {
+    background-image: none;
 }
 
 #contact {

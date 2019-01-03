@@ -114,11 +114,13 @@ header {
 
 .gallery-item {
     background-color: #374960;
-    border: dodgerblue dotted 1px;
+    -webkit-box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
     padding: 60px;
     display: inline-block;
     width: 250px;
-    margin-top: 4px;
+    margin-top: 10px;
 }
 
 .gallery-item .gallery-inner {
@@ -160,7 +162,7 @@ header {
 }
 
 #project-1 {
-    background-image: url("../assets/crafted_sound.png");
+    background-image: url("../assets/crafted_sound2.png");
     background-size: cover;
 }
 

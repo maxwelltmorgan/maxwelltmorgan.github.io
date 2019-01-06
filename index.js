@@ -1,4 +1,7 @@
 let height = window.innerHeight;
-console.log(height);
+
 let home = document.getElementById('home');
 home.style.height = `${height}px`;
+
+let about = document.getElementById('about');
+about.style.height = `${height}px`;

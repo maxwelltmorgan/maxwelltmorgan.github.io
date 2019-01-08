@@ -23,13 +23,13 @@
     <div id="container">
         <header>
             <div id="header-inner">
-                <a id="logo-anchor" href="#">
+                <a id="logo-anchor" href="#container">
                     <img id="logo" src="assets/mw_logo_blue.png" alt="logo">
                 </a>
                 <ul id="nav-links">
-                    <li class="nav-link">About</li>
-                    <li class="nav-link">Portfolio</li>
-                    <li class="nav-link">Contact</li>
+                    <a href="#portfolio"><li class="nav-link">Portfolio</li></a>
+                    <a href="#about"><li class="nav-link">About</li></a>
+                    <a href="#contact"><li class="nav-link">Contact</li></a>
                 </ul>
             </div>
         </header>
@@ -40,7 +40,7 @@
                     Hello, I'm <span id="max">Maxwell</span> - I'm a Full Stack Developer based in Denver
                 </h1>
             </div>
-            <button id="work-button" type="button" name="button">View my work</button>
+            <button id="work-button" type="button" name="button" onclick="window.location.href='#portfolio'">View my work</button>
         </section>
         <!--PORTFOLIO-->
         <section id="portfolio">
@@ -52,7 +52,7 @@
                             <div class="gallery-item-title">Crafted Sound</div>
                             <div class="gallery-item-description">ReactJS Music Player</div>
                         </div>
-                        <button class="gallery-button">View Project</button>
+                        <a href="#portfolio"><button class="gallery-button">View Project</button></a>
                     </div>
                 </div>
                 <div class="gallery-item" id="project-2">
@@ -105,27 +105,6 @@
         <!--ABOUT-->
         <section id="about">
             <h2 class="section-header">About</h2>
-                <h3 class="i-am-headings" id="learner-heading">I'm a <span class="i-am" id="learner">perpetural learner</span></h3>
-                <h3 class="i-am-headings" id="solver-heading">I'm a thinker and a <span class="i-am" id="solver">problem solver</span></h3>
-                <h3 class="i-am-headings" id="lucky-heading">I'm <span class="i-am" id="lucky">incredibly lucky</span></h3>
-
-              <div id="polaroids">
-                  <div class='polaroid-frame'>
-                      <div class='polaroid-image' id="mike">
-                          <img class="polaroid" src="assets/mike.jpg">
-                      </div>
-                  </div>
-                  <div class='polaroid-frame'>
-                      <div class='polaroid-image' id="wife">
-                          <img class="polaroid" src="assets/sleding.jpg">
-                      </div>
-                  </div>
-                  <div class='polaroid-frame'>
-                      <div class='polaroid-image' id="russ">
-                          <img class="polaroid" src="assets/sleding.jpg">
-                      </div>
-                  </div>
-              </div>
         </section>
         <!--CONTACT-->
         <section id="contact">

@@ -13,6 +13,13 @@ header {
     z-index: 3;
 }
 
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+
 #logo {
     width: 60px;
     padding: 18px 0 0 20px;
@@ -99,37 +106,6 @@ header {
 #work-button:hover {
     background-color: dodgerblue;
     border: dodgerblue solid 2px;
-}
-
-#about {
-    background-color: lightgrey;
-}
-
-.i-am-headings {
-    text-align: center;
-}
-
-.i-am {
-    color: dodgerblue;
-}
-
-#learner-heading {
-    text-indent: -25%;
-    margin: 10px;
-}
-
-#solver-heading {
-    text-indent: 25%;
-    margin: 10px;
-}
-
-#lucky {
-    color: green;
-    font-size: 2rem;
-}
-
-#lucky-heading {
-    margin-bottom: 0;
 }
 
 #portfolio {
@@ -246,6 +222,10 @@ header {
     background-image: none;
 }
 
+#about {
+    background-color: lightgrey;
+}
+
 #contact {
     background-color: #313943;
 }
@@ -323,89 +303,4 @@ footer {
   #social-links {
     visibility: hidden;
   }
-}
-
-
-
-
-
-.polaroid-frame {
-  position: relative;
-  display: inline-block;
-  background: #ece9e6;
-  background: -webkit-linear-gradient(to right, #ece9e6, #fafafa);
-  background: linear-gradient(to bottom, #ece9e6, #fafafa);
-  padding: 20px 20px 45px 20px;
-  margin: 0 10px;
-}
-
-.polaroid-frame:before,
-.polaroid-frame:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width:300px;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-}
-
-.polaroid-frame:after {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
-}
-
-#mike {
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("../assets/mike.jpg");
-}
-
-#wife {
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("../assets/wife.jpeg");
-}
-
-#russ {
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("../assets/russ.jpg");
-}
-
-.polaroid {
-  width: 200px;
-  height: 200px;
-  margin: 30px;
-  visibility: hidden;
-}
-
-#polaroids {
-   margin: 0 25px;
-   padding: 10px;
-   text-align: center;
 }

@@ -226,6 +226,17 @@ a:visited {
     background-color: lightgrey;
 }
 
+#images-container {
+    margin-left: 100px;
+    height: 100%;
+}
+
+.about-images {
+    height: 25%;
+    display: block;
+    padding: 10px;
+}
+
 #contact {
     background-color: #313943;
 }

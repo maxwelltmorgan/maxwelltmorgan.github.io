@@ -7,25 +7,42 @@ body {
 header {
     background-color: transparent;
     color: white;
-    height: 50px;
+    height: 120px;
     position: fixed;
     width: 100vw;
     z-index: 3;
 }
 
+.changeColor {
+    background: white;
+}
+
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 a:visited {
-    color: white;
+    color: white !important;
 }
 
 #logo {
     width: 60px;
-    padding: 18px 0 0 20px;
+    padding: 40px;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+            transition:         transform 1s ease-in-out;
+}
+
+#logo:hover {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+#logo:active {
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
 }
 
 #nav-links {
+    font-size: .95rem;
     margin: 0;
     padding-top: 15px;
     float: right;
@@ -36,7 +53,7 @@ a:visited {
     display: block;
     line-height: 2;
     text-transform: uppercase;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .nav-link:hover {
@@ -45,12 +62,6 @@ a:visited {
 
 .nav-link:active {
     color: dodgerblue;
-}
-
-@media only screen and (max-width: 600px) {
-  #nav-links {
-    visibility: hidden;
-  }
 }
 
 .section-header {
@@ -84,14 +95,24 @@ a:visited {
     width: 50%;
     padding: 0 10px 0 10px;
     font-weight: 100;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    letter-spacing: 10px;
-    line-height: 1.3;
+    letter-spacing: .6rem;
+    line-height: 1.3em;
+    text-align: center;
 }
 
 #max {
     color: #d9b324;
+}
+
+#max:hover {
+    color: dodgerblue;
+}
+
+#max:active {
+    color: white;
+    font-style: italic;
 }
 
 #work-button {
@@ -127,7 +148,7 @@ a:visited {
     padding: 60px;
     display: inline-block;
     width: 250px;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .gallery-item .gallery-inner {
@@ -227,14 +248,13 @@ a:visited {
 }
 
 #images-container {
-    margin-left: 100px;
-    height: 100%;
+    margin-left: 20px;
 }
 
 .about-images {
-    height: 25%;
-    display: block;
-    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    padding-bottom: 20px;
 }
 
 #contact {
@@ -245,6 +265,7 @@ a:visited {
     color: #d1d3d5;
     text-align: center;
     padding-bottom: 20px;
+    height: 600px;
 }
 
 #form-tagline {
@@ -313,5 +334,9 @@ footer {
 @media only screen and (max-width: 700px) {
   #social-links {
     visibility: hidden;
+  }
+  #hello {
+    font-size: 2rem;
+    letter-spacing: .4rem;
   }
 }

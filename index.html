@@ -19,9 +19,9 @@
       </script>
 </head>
 
-<body>
+<body onscroll="bodyScroll();">
     <div id="container">
-        <header>
+        <header id="header">
             <div id="header-inner">
                 <a id="logo-anchor" href="#container">
                     <img id="logo" src="assets/mw_logo_blue.png" alt="logo">
@@ -37,7 +37,7 @@
         <section class="flex" id="home">
             <div class="flex">
                 <h1 id="hello">
-                    Hello, I'm <span id="max">Maxwell</span> - I'm a Full Stack Developer based in Denver
+                    Hello, I'm <span id="max" onclick="window.location.href='#about'">Maxwell</span> - I'm a Full Stack Web Developer based in Denver
                 </h1>
             </div>
             <button id="work-button" type="button" name="button" onclick="window.location.href='#portfolio'">View my work</button>
@@ -106,9 +106,15 @@
         <section id="about">
             <h2 class="section-header">About</h2>
             <div id="images-container">
-                <img class="about-images" id="mike" src="assets/mike.jpg">
-                <img class="about-images" id="wife" src="assets/wife.jpeg">
-                <img class="about-images" id="russ" src="assets/russ.jpg">
+                <div class ="about-image-containers" id="mike-container">
+                    <img class="about-images" id="mike" src="assets/mike.jpg">
+                </div>
+                <div class ="about-image-containers" id="wife-container">
+                    <img class="about-images" id="wife" src="assets/wife.jpeg">
+                </div>
+                <div class ="about-image-containers" id="russ-container">
+                    <img class="about-images" id="russ" src="assets/russ.jpg">
+                </div>
             </div>
         </section>
         <!--CONTACT-->
@@ -134,6 +140,6 @@
         </footer>
     </div>
 </body>
-<script src="index.js"></script>
 
+<script src="index.js"></script>
 </html>

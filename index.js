@@ -18,7 +18,7 @@ function bodyScroll() {
     header.style.backgroundColor = "rgba(22,38,67,.2)";
     if (scrollTimer != -1)
         clearTimeout(scrollTimer);
-    scrollTimer = window.setTimeout("scrollFinished()", 0);
+    scrollTimer = window.setTimeout("scrollFinished()", 500);
 }
 
 function scrollFinished() {

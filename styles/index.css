@@ -6,7 +6,6 @@ body {
 
 header {
     background-color: transparent;
-    color: white;
     height: 120px;
     position: fixed;
     width: 100vw;
@@ -19,6 +18,7 @@ header {
 
 a {
     text-decoration: none !important;
+    color: white !important;
 }
 a:visited {
     color: white !important;
@@ -47,17 +47,21 @@ a:visited {
     padding-top: 15px;
     float: right;
     list-style: none;
+    text-align: right;
 }
 
 .nav-link {
     display: block;
     line-height: 2;
     text-transform: uppercase;
-    padding-right: 10px;
+    padding-right: 30px;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+            transition:         transform .2s ease-in-out;
 }
 
 .nav-link:hover {
     color: #d9b324;
+    transform: translateX(-10px);
 }
 
 .nav-link:active {
@@ -76,7 +80,7 @@ a:visited {
 #home {
     background-image: url("../assets/dark_paris.png");
     background-size: 75%;
-    background-position: -50% 25%;
+    background-position: -50% 40%;
     background-repeat: no-repeat;
     background-color: #1B242F;
     color: white;
@@ -95,7 +99,7 @@ a:visited {
     width: 50%;
     padding: 0 10px 0 10px;
     font-weight: 100;
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: .6rem;
     line-height: 1.3em;
@@ -107,12 +111,11 @@ a:visited {
 }
 
 #max:hover {
-    color: dodgerblue;
+    font-weight: bold;
 }
 
 #max:active {
-    color: white;
-    font-style: italic;
+    color: dodgerblue;
 }
 
 #work-button {
@@ -122,6 +125,7 @@ a:visited {
     color: white;
     border: 2px solid white;
     padding: 5px 10px 5px 10px;
+    margin-bottom: 40px;
 }
 
 #work-button:hover {
@@ -131,13 +135,16 @@ a:visited {
 
 #portfolio {
     background-color: darkgrey;
-    padding-bottom: 40px;
 }
 
 #gallery {
     text-align: center;
     margin: 0 auto 0 auto;
     max-width: 1500px;
+}
+
+#gallery-container {
+    padding: 40px;
 }
 
 .gallery-item {
@@ -248,12 +255,13 @@ a:visited {
 }
 
 #images-container {
+    display: inline-block;
     margin-left: 20px;
 }
 
 .about-images {
-    width: 150px;
-    border-radius: 5px;
+    width: 20%;
+    min-width: 200px;
     padding-bottom: 20px;
 }
 
@@ -329,14 +337,4 @@ footer {
     text-transform: uppercase;
     padding-right: 20px;
     line-height: 50px;
-}
-
-@media only screen and (max-width: 700px) {
-  #social-links {
-    visibility: hidden;
-  }
-  #hello {
-    font-size: 2rem;
-    letter-spacing: .4rem;
-  }
 }

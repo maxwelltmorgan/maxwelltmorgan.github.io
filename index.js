@@ -1,14 +1,13 @@
 let height = window.innerHeight;
 
 let home = document.getElementById('home');
-home.style.height = `${height}px`;
+home.style.minHeight = `${height}px`;
 
 let about = document.getElementById('about');
-about.style.height = `${height}px`;
+about.style.minHeight = `${height}px`;
 
-let contact = document.getElementById('contact');
-let contactHeight = window.innerHeight - 50;
-contact.style.height = `${contactHeight}px`;
+let portfolio = document.getElementById('portfolio');
+portfolio.style.minHeight = `${height}px`;
 
 
 let header = document.getElementById('header');

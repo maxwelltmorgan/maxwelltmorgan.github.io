@@ -251,18 +251,23 @@ a:visited {
 }
 
 #about {
-    background-color: lightgrey;
+    background-color: #FFFFFF;
 }
 
-#images-container {
-    display: inline-block;
-    margin-left: 20px;
+#profile-art-container {
+    float: left;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.about-images {
-    width: 20%;
-    min-width: 200px;
-    padding-bottom: 20px;
+#profile-art {
+    width: 200px;
+    border-radius: 50%;
+}
+
+#profile-text-container {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #contact {

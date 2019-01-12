@@ -252,22 +252,21 @@ a:visited {
 
 #about {
     background-color: #FFFFFF;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #profile-art-container {
     float: left;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 50px;
 }
 
 #profile-art {
     width: 200px;
-    border-radius: 50%;
 }
 
 #profile-text-container {
-    margin-left: 100px;
-    margin-right: 100px;
+
 }
 
 #contact {

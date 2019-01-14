@@ -24,11 +24,5 @@ function scrollFinished() {
     header.style.backgroundColor = "transparent";
 }
 
-function submitform() {
-  let f = document.getElementsByTagName('textarea')[0];
-  if(f.checkValidity()) {
-    f.submit();
-  } else {
-    alert(document.getElementById('example').validationMessage);
-  }
-}
+var form = document.getElementById('#1');
+honey(form);

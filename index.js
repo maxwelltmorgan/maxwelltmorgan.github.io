@@ -23,6 +23,3 @@ function bodyScroll() {
 function scrollFinished() {
     header.style.backgroundColor = "transparent";
 }
-
-var form = document.getElementById('#1');
-honey(form);

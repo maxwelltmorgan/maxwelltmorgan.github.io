@@ -295,6 +295,10 @@ a:visited {
     color: white;
 }
 
+.g-recaptcha {
+    text-align: center;
+}
+
 #submit-button {
     margin: 5px 0 10px 0;
     line-height: 40px;

@@ -17,15 +17,7 @@
       ga('create', 'UA-106425143-1', 'auto');
       ga('send', 'pageview');
       </script>
-      <script src='https://www.google.com/recaptcha/api.js?render=6LcRrokUAAAAAK3RNcTwSlqvd3vukq4WN3x5C2dy'></script>
-      <script>
-grecaptcha.ready(function() {
-grecaptcha.execute('6LcRrokUAAAAAK3RNcTwSlqvd3vukq4WN3x5C2dy', {action: 'action_name'})
-.then(function(token) {
-// Verify the token on the server.
-});
-});
-</script>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body onscroll="bodyScroll();">
@@ -148,15 +140,16 @@ grecaptcha.execute('6LcRrokUAAAAAK3RNcTwSlqvd3vukq4WN3x5C2dy', {action: 'action_
         <!--CONTACT-->
         <section id="contact">
             <h2 class="section-header">Contact</h2>
-            <form class="contact-form" id="#1" action="https://getsimpleform.com/messages?form_api_token=232629169fa79b357873c605a2f61081" method="post">
+            <form class="contact-form" id="#1" action="https://getsimpleform.com/messages?form_api_token=232629169fa79b357873c605a2f61081" method="post" onsubmit="return submitUserForm();">
                 <h3 id="form-tagline">Have a question or want to work with me?</h3>
                 <input class="form-line" type='hidden' name='redirect_to' value='http://maxwelltmorgan.com/index.html'>
                 <input class="form-line" type='text' name='name' placeholder='Name' pattern="^[a-zA-Z,'.\-\s]+$" required>
                 <input class="form-line" type='email' name='email' placeholder='Email' required>
                 <textarea class="form-line" name='message' placeholder='Message...' rows="5" required></textarea>
-                <input id="submit-button" type='submit' value='Submit'>
+                <div class="g-recaptcha" data-sitekey="6Ley1okUAAAAAE1qsw3L1kYfiVE7q2Zo3q_1kqq5" data-callback="verifyCaptcha"></div>
+                <div id="g-recaptcha-error"></div>
+                <input id="submit-button" type='submit' name='submit' value='Submit'>
             </form>
-
         </section>
         <footer id="footer">
             <p id="author">© Maxwell Torrence Morgan</p>

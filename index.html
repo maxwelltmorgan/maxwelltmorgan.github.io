@@ -17,7 +17,6 @@
       ga('create', 'UA-106425143-1', 'auto');
       ga('send', 'pageview');
       </script>
-      <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body onscroll="bodyScroll();">
@@ -146,20 +145,20 @@
                 <input class="form-line" type='text' name='name' placeholder='Name' pattern="^[a-zA-Z,'.\-\s]+$" required>
                 <input class="form-line" type='email' name='email' placeholder='Email' required>
                 <textarea class="form-line" name='message' placeholder='Message...' rows="5" required></textarea>
-                <div class="g-recaptcha" data-sitekey="6Ley1okUAAAAAE1qsw3L1kYfiVE7q2Zo3q_1kqq5" data-callback="verifyCaptcha();"></div>
+                <div class="g-recaptcha" data-sitekey="6Ley1okUAAAAAE1qsw3L1kYfiVE7q2Zo3q_1kqq5" data-callback="verifyCaptcha"></div>
                 <div id="g-recaptcha-error"></div>
-                <input id="submit-button" type='submit' name='submit' value='Submit'>
+                <input id="submit-button" type='submit' name='submit' value='Submit'/>
             </form>
+            <script src='https://www.google.com/recaptcha/api.js'></script>
             <script>
             function submitUserForm() {
                 var response = grecaptcha.getResponse();
-                console.log(response.length);
                 if(response.length == 0) {
                     document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
                     return false;
                 }
                 return true;
-            }
+            };
 
             function verifyCaptcha() {
                 console.log('verified');

@@ -19,7 +19,7 @@
       </script>
 </head>
 
-<body onscroll="bodyScroll();">
+<body>
     <div id="container">
         <header id="header">
             <div id="header-inner">
@@ -50,6 +50,7 @@
         </section>
         <!--PORTFOLIO-->
         <section id="portfolio">
+            <canvas id="canvas"></canvas>
             <h2 class="section-header">Portfolio</h2>
             <div id="gallery">
                 <div id="gallery-container">
@@ -112,28 +113,80 @@
         </section>
         <!--ABOUT-->
         <section id="about">
-            <h2 class="section-header">About</h2>
-            <div id="profile-art-container">
-                <div id="profile-art-inner">
-                    <img id="profile-art" src="assets/profile_art.png">
+            <div id="about-inner">
+                <h2 class="section-header">About</h2>
+                <div id="profile-art-container">
+                    <div id="profile-art-inner">
+                        <img id="profile-art" src="assets/profile_art.png">
+                    </div>
                 </div>
-            </div>
-            <div id="profile-text-container">
-                <p>I'm a perpetual learner.  I'm a thinker and a problem solver.  I'm incredibly lucky.
-                    </br>
-                    </br>
-                    I went to school at CU Boulder for Environmental Design before transferring to Northern Colorado to study Business with a Finance empasis.
-                    </br>
-                    </br>
-                    I have 10+ years of professional experience in financial services. During that time I enjoyed creating tools and visualizations that consolidate and communicate the
-                    complex effectively. This sparked my passion for web and data technologies and is the primary reason for my transition to a career as a Web Developer.
-                    </br>
-                    </br>
-                    I have a wonderful wife (we both pole-vaulted in college) and three endlessly energetic little boys. I’m sick and tired of chicken nuggets and mac ‘n’ cheese. I’m a coffee lover and a big boxing fan.
-                </p>
-            </div>
-            <div id="profile-skills-container">
+                <div id="profile-text-container">
+                    <p>I'm a perpetual learner. I'm a thinker and a problem solver. I'm incredibly lucky.
+                        </br>
+                        </br>
+                        I went to school at CU Boulder for Environmental Design before transferring to Northern Colorado to study Business with a Finance empasis.
+                        </br>
+                        </br>
+                        I have 10+ years of professional experience in financial services. During that time I enjoyed creating tools and visualizations that consolidate and communicate the
+                        complex effectively. This sparked my passion for web and data technologies and is the primary reason for my transition to a career as a Web Developer.
+                        </br>
+                        </br>
+                        I have a wonderful wife (we both pole-vaulted in college) and three endlessly energetic little boys. I’m sick and tired of chicken nuggets and mac ‘n’ cheese. I’m a coffee lover and a big boxing fan.
+                    </p>
+                </div>
+                <div id="profile-skills-container">
+                    <div class="skills-bar">
+                      <h2>Technical Skills</h2>
+                      <div class="progress-bar horizontal">HTML
+                        <div class="progress-track">
+                          <div class="progress-fill">
+                            <span class="span-percent">80%</span>
+                          </div>
+                        </div>
+                      </div>
 
+                      <div class="progress-bar horizontal">CSS
+                        <div class="progress-track">
+                          <div class="progress-fill">
+                            <span class="span-percent">80%</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="progress-bar horizontal">JavaScript
+                        <div class="progress-track">
+                          <div class="progress-fill">
+                            <span class="span-percent">80%</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="progress-bar horizontal">ReactJs
+                        <div class="progress-track">
+                          <div class="progress-fill">
+                            <span class="span-percent">80%</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="progress-bar horizontal">Ruby
+                        <div class="progress-track">
+                          <div class="progress-fill">
+                            <span class="span-percent">50%</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="progress-bar horizontal">Rails
+                        <div class="progress-track">
+                          <div class="progress-fill">
+                            <span class="span-percent">50%</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <a id='credit' href='https://www.freepik.com/free-vector/vector-network-background-abstract-polygon-triangle_1306336.htm'>Background by Ikatod</a>
             </div>
         </section>
         <!--CONTACT-->
@@ -145,25 +198,11 @@
                 <input class="form-line" type='text' name='name' placeholder='Name' pattern="^[a-zA-Z,'.\-\s]+$" required>
                 <input class="form-line" type='email' name='email' placeholder='Email' required>
                 <textarea class="form-line" name='message' placeholder='Message...' rows="5" required></textarea>
-                <div class="g-recaptcha" data-sitekey="6Ley1okUAAAAAE1qsw3L1kYfiVE7q2Zo3q_1kqq5" data-callback="verifyCaptcha" data-theme="dark"></div>
-                <div id="g-recaptcha-error"></div>
-                <input id="submit-button" type='submit' name='submit' value='Submit'/>
+                <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6Ley1okUAAAAAE1qsw3L1kYfiVE7q2Zo3q_1kqq5" data-callback="verifyCaptcha" data-theme="dark"></div>
+                <div id="g-recaptcha-error" class="g-recaptcha"></div>
+                <input id="submit-button" type='submit' name='submit' value='Submit' />
             </form>
             <script src='https://www.google.com/recaptcha/api.js'></script>
-            <script>
-            function submitUserForm() {
-                var response = grecaptcha.getResponse();
-                if(response.length == 0) {
-                    document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
-                    return false;
-                }
-                return true;
-            };
-
-            function verifyCaptcha() {
-                document.getElementById('g-recaptcha-error').innerHTML = '';
-            }
-            </script>
         </section>
         <footer id="footer">
             <p id="author">© Maxwell Torrence Morgan</p>
@@ -175,6 +214,7 @@
             </ul>
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
+
 </html>

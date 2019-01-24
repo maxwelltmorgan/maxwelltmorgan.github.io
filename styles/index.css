@@ -6,8 +6,6 @@ body {
     font-family: 'Raleway';
 }
 
-
-
 header {
     background-color: transparent;
     height: 120px;
@@ -135,7 +133,7 @@ a:visited {
 }
 
 #portfolio {
-    background-color: darkgrey;
+    background-color: lightgrey;
 }
 
 #gallery {
@@ -257,8 +255,7 @@ a:visited {
 }
 
 #about-inner {
-    background-color: rgba(255,255,255,0.8);
-    background-position: top;
+    background-color: rgba(255,255,255,0.5);
 }
 
 #credit {
@@ -273,6 +270,14 @@ a:visited {
 
 #profile-art {
     width: 200px;
+    border-radius: 5px;
+    -webkit-box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+#profile-blurb {
+    padding: 20px;
 }
 
 #contact {

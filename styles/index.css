@@ -1,5 +1,3 @@
-@import "compass/css3";
-
 body {
     margin: 0;
     width: 100vw;
@@ -16,17 +14,17 @@ header {
 
 a {
     text-decoration: none !important;
-    color: #C0C0C0 !important;
+    color: #6D9BF1 !important;
     font-weight: bold;
     letter-spacing: 1px;
 }
 a:visited {
-    color: #C0C0C0 !important;
+    color: #6D9BF1 !important;
 }
 
 #logo {
     width: 60px;
-    padding: 40px;
+    padding: 30px;
     -webkit-transition: -webkit-transform 1s ease-in-out;
             transition:         transform 1s ease-in-out;
 }
@@ -98,7 +96,7 @@ a:visited {
     width: 50%;
     padding: 0 10px 0 10px;
     font-weight: 100;
-    font-size: 4rem;
+    font-size: 58px;
     text-transform: uppercase;
     letter-spacing: .6rem;
     line-height: 1.3em;
@@ -114,7 +112,7 @@ a:visited {
 }
 
 #max:active {
-    color: dodgerblue;
+    color: #6D9BF1;
 }
 
 #work-button {
@@ -133,7 +131,7 @@ a:visited {
 }
 
 #portfolio {
-    background-color: lightgrey;
+    background-image: linear-gradient(to bottom right, lightgrey, grey, darkgrey);
 }
 
 #gallery {
@@ -144,6 +142,8 @@ a:visited {
 
 #gallery-container {
     padding: 40px;
+    margin-right: 125px;
+    margin-left: 125px;
 }
 
 .gallery-item {
@@ -153,8 +153,8 @@ a:visited {
     box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
     padding: 60px;
     display: inline-block;
-    width: 250px;
-    margin: 10px;
+    width: 300px;
+    margin: 5px;
 }
 
 .gallery-item .gallery-inner {
@@ -255,29 +255,113 @@ a:visited {
 }
 
 #about-inner {
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.4);
 }
 
 #credit {
     margin-left: 5px;
     text-transform: lowercase;
     font-weight: 100;
+    opacity: .5;
 }
+
+#profile-text-container {
+    margin-left: 75px;
+    width: 50%;
+}
+
 #profile-art-container {
-    float: left;
-    margin: 50px;
+    float: right;
+    width: 25%;
+    margin-right: 125px;
 }
 
 #profile-art {
     width: 200px;
-    border-radius: 5px;
-    -webkit-box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 5px 5px darkgrey;
+    margin-top: 80px;
 }
 
-#profile-blurb {
-    padding: 20px;
+.about-headers {
+    color: #1b242f;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-images {
+    color: black;
+    font-weight: bold;
+    animation: text-pulse 5s ease-out infinite;
+}
+
+@keyframes text-pulse {
+	0%{
+		opacity: 0.2;
+        transform: rotate(0deg);
+	}
+	50%{
+		opacity: 1;
+        transform: rotate(10deg);
+        color: #6D9BF1;
+	}
+	100%{
+		opacity: 0.2;
+        transform: rotate(0deg);
+	}
+}
+
+.profile-blurb {
+    font-size: 16px;
+}
+
+#profile-skills-container {
+    width: 80%;
+    margin-left: 75px;
+}
+
+.skills-bar {
+  width: 100%;
+  padding-bottom: 50px;
+  background: transparent;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #1b242f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.skills-bar h2 {
+    text-align: center;
+}
+
+.progress-bar {
+  float: left;
+  height: 20px;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.progress-track {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: grey;
+}
+
+.progress-fill {
+  position: relative;
+  background: darkblue;
+  height: 10px;
+  width: 50%;
+  line-height: 20px;
+}
+
+.span-percent {
+    visibility: hidden;
 }
 
 #contact {
@@ -357,45 +441,4 @@ footer {
     text-transform: uppercase;
     padding-right: 20px;
     line-height: 50px;
-}
-
-.skills-bar {
-  width: 500px;
-  margin: 20px;
-  background: transparent;
-  padding: 20px;
-  overflow: hidden;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #1b242f;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-
-.progress-bar {
-  float: left;
-  height: 20px;
-  width: 100%;
-  padding: 15px 0;
-}
-
-.progress-track {
-  position: relative;
-  width: 100%;
-  height: 10px;
-  background: grey;
-}
-
-.progress-fill {
-  position: relative;
-  background: darkblue;
-  height: 10px;
-  width: 50%;
-  line-height: 20px;
-}
-
-.span-percent {
-    visibility: hidden;
 }

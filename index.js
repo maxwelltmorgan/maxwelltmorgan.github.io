@@ -38,9 +38,7 @@ let aboutImages = document.getElementsByClassName('about-images');
 
 for (var i = 0; i < aboutImages.length; i++) {
     aboutImages[i].addEventListener('mouseover', function(e,index) {
-            profileArt.style.transform = "rotateY(360deg)";
-            profileArt.style.transition = "transform .8s";
-            if(this.innerHTML == "incredibly lucky"){
+            if(this.innerHTML == "incredibly lucky!"){
                 profileArt.src = "assets/mike.jpg";
             }
             else if (this.innerHTML == "wonderful wife"){
@@ -48,15 +46,18 @@ for (var i = 0; i < aboutImages.length; i++) {
             }
             else if (this.innerHTML == "energetic little boys"){
                 profileArt.src = "assets/russ.jpg";
+                profileArt.style.backgroundSize = "contain";
             };
+            profileArt.style.boxShadow = "10px 30px 30px darkgrey";
     });
 };
 
 for (var i = 0; i < aboutImages.length; i++) {
     aboutImages[i].addEventListener('mouseleave', function(e) {
-            profileArt.style.transform = "rotateY(-360deg)";
-            profileArt.style.transition = "transform .8s";
+            profileArt.style.boxShadow = "1px 5px 5px darkgrey";
+            profileArt.style.transform = "none";
             profileArt.src = "assets/profile_art.png";
+            profileArt.style.backgroundSize = "cover";
     });
 };
 

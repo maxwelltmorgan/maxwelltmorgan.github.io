@@ -241,12 +241,16 @@ a:visited {
 }
 
 #project-6 {
-    background-image: url("../assets/tictactoe.jpg");
-    background-size: cover;
+    background-image: url("../assets/calculator_screenshot.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: darkgrey;
 }
 
 #project-6:hover {
     background-image: none;
+    background-color: #1b242f;
 }
 
 #about {
@@ -255,7 +259,7 @@ a:visited {
 }
 
 #about-inner {
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.75);
 }
 
 #credit {
@@ -292,7 +296,7 @@ a:visited {
 .about-images {
     color: black;
     font-weight: bold;
-    animation: text-pulse 5s ease-out infinite;
+    animation: text-pulse 2s ease-out infinite;
 }
 
 @keyframes text-pulse {
@@ -316,8 +320,8 @@ a:visited {
 }
 
 #profile-skills-container {
-    width: 80%;
-    margin-left: 75px;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .skills-bar {

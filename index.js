@@ -56,7 +56,7 @@ for (var i = 0; i < aboutImages.length; i++) {
     aboutImages[i].addEventListener('mouseleave', function(e) {
             profileArt.style.boxShadow = "1px 5px 5px darkgrey";
             profileArt.style.transform = "none";
-            profileArt.src = "assets/profile_art.png";
+            profileArt.src = "assets/ProfilePicture.jpg";
             profileArt.style.backgroundSize = "cover";
     });
 };

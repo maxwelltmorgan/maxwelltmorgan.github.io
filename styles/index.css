@@ -12,13 +12,14 @@ header {
     z-index: 3;
 }
 
-a {
+.link {
     text-decoration: none !important;
     color: #6D9BF1 !important;
     font-weight: bold;
     letter-spacing: 1px;
 }
-a:visited {
+
+.link:visited {
     color: #6D9BF1 !important;
 }
 
@@ -71,7 +72,7 @@ a:visited {
     text-align: center;
     font-size: 2rem;
     text-transform: uppercase;
-    color: #5f656d
+    color: #5f656d;
 }
 
 #home {
@@ -131,7 +132,7 @@ a:visited {
 }
 
 #portfolio {
-    background-image: linear-gradient(to bottom right, lightgrey, grey, darkgrey);
+    background-image: linear-gradient(to bottom right, lightgrey, grey, #505050);
 }
 
 #gallery {
@@ -266,7 +267,7 @@ a:visited {
     margin-left: 5px;
     text-transform: lowercase;
     font-weight: 100;
-    opacity: .5;
+    opacity: .3;
 }
 
 #profile-text-container {
@@ -280,39 +281,30 @@ a:visited {
     margin-right: 125px;
 }
 
-#profile-art {
+.profile-art {
     width: 200px;
     box-shadow: 1px 5px 5px darkgrey;
     margin-top: 80px;
+    animation:fading 10s infinite;
+}
+
+@keyframes fading {
+    0%{
+        opacity:0
+    }
+    50%{
+        opacity:1
+    }
+    100%{
+        opacity:0
+    }
 }
 
 .about-headers {
-    color: #1b242f;
+    color: darkblue;
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
-}
-
-.about-images {
-    color: black;
-    font-weight: bold;
-    animation: text-pulse 2s ease-out infinite;
-}
-
-@keyframes text-pulse {
-	0%{
-		opacity: 0.2;
-        transform: rotate(0deg);
-	}
-	50%{
-		opacity: 1;
-        transform: rotate(10deg);
-        color: #6D9BF1;
-	}
-	100%{
-		opacity: 0.2;
-        transform: rotate(0deg);
-	}
 }
 
 .profile-blurb {
@@ -390,11 +382,17 @@ a:visited {
     width: 60%;
     min-width: 350px;
     line-height: 40px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     background-color: #1b242f;
     border: none;
     padding: 5px 10px 5px 10px;
     color: white;
+    font-weight: lighter;
+}
+
+.form-line::placeholder {
+    color: #5f656d;
+    font-weight: 300;
 }
 
 .g-recaptcha {
@@ -429,7 +427,7 @@ footer {
     line-height: 50px;
     padding-left: 20px;
     display: inline;
-    color: grey;
+    color: #5f656d;
     text-transform: uppercase;
 }
 
@@ -445,4 +443,17 @@ footer {
     text-transform: uppercase;
     padding-right: 20px;
     line-height: 50px;
+}
+
+.fab {
+    vertical-align: -25%;
+    color: #5f656d;
+}
+
+.fab:hover {
+    color: white;
+}
+
+.fab:active {
+    color: dodgerblue;
 }

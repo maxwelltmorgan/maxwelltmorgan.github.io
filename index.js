@@ -7,9 +7,11 @@ let contact = document.getElementById('contact');
 
 let height = window.innerHeight;
 
-const sections = [home,about,aboutInner,portfolio];
+const sections = [home, about, aboutInner, portfolio];
 
-sections.forEach( section => {section.style.minHeight = `${height}px`;})
+sections.forEach(section => {
+    section.style.minHeight = `${height}px`;
+})
 
 let contactHeight = window.innerHeight - 50;
 contact.style.minHeight = `${contactHeight}px`;
@@ -19,52 +21,40 @@ let header = document.getElementById('header');
 let scrollTimer = -1;
 
 window.addEventListener('scroll', function(e) {
-        header.style.backgroundColor = "rgba(22,38,67,.2)";
+    header.style.backgroundColor = "rgba(22,38,67,.2)";
 
-        if (scrollTimer != -1)
-            clearTimeout(scrollTimer);
-        scrollTimer = window.setTimeout("scrollFinished()", 500);
+    if (scrollTimer != -1)
+        clearTimeout(scrollTimer);
+    scrollTimer = window.setTimeout("scrollFinished()", 500);
 
-        scrollFinished = () => {
+    scrollFinished = () => {
         header.style.backgroundColor = "transparent";
-        }
+    }
 });
 
-//image hover effect
-let paragraph = document.getElementById('profile-blurb');
-let profileArt = document.getElementById('profile-art');
+//image carousel
 
-let aboutImages = document.getElementsByClassName('about-images');
+var myIndex = 0;
+carousel();
 
-for (var i = 0; i < aboutImages.length; i++) {
-    aboutImages[i].addEventListener('mouseover', function(e,index) {
-            if(this.innerHTML == "incredibly lucky!"){
-                profileArt.src = "assets/mike.jpg";
-            }
-            else if (this.innerHTML == "wonderful wife"){
-                profileArt.src = "assets/wife.jpeg";
-            }
-            else if (this.innerHTML == "energetic little boys"){
-                profileArt.src = "assets/russ.jpg";
-                profileArt.style.backgroundSize = "contain";
-            };
-            profileArt.style.boxShadow = "10px 30px 30px darkgrey";
-    });
-};
-
-for (var i = 0; i < aboutImages.length; i++) {
-    aboutImages[i].addEventListener('mouseleave', function(e) {
-            profileArt.style.boxShadow = "1px 5px 5px darkgrey";
-            profileArt.style.transform = "none";
-            profileArt.src = "assets/ProfilePicture.jpg";
-            profileArt.style.backgroundSize = "cover";
-    });
-};
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("profile-art");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+        myIndex = 1
+    }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 9000);
+}
 
 //recaptcha
 function submitUserForm() {
     var response = grecaptcha.getResponse();
-    if(response.length == 0) {
+    if (response.length == 0) {
         document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
         return false;
     }
@@ -81,6 +71,6 @@ let progressFill = document.getElementsByClassName('progress-fill');
 
 
 let skills = [...spanPercent];
-skills.forEach(function (skill, index){
+skills.forEach(function(skill, index) {
     progressFill[index].style.width = `${spanPercent[index].textContent}`;
 });

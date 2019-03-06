@@ -494,6 +494,32 @@ footer {
     color: dodgerblue;
 }
 
+@media only screen and (max-width: 800px) {
+    #profile-text-container {
+        margin: 0 auto;
+        width: 80%;
+        padding: 15px;
+    }
+    
+    #profile-art-container {
+        width: 100%;
+        float: none;
+    }
+
+    .profile-art {
+        width: 300px;
+        margin: 15px auto;
+    }
+    
+    .about-headers {
+        font-size: 16px;
+    }
+    .profile-blurb {
+        font-size: 14px;
+        text-align: center;
+    }
+  }
+
 @media only screen and (max-width: 600px) {
     #gallery-container {
         padding: 15px;

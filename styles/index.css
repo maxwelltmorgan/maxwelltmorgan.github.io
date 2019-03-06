@@ -455,7 +455,7 @@ header {
 footer {
     background-color: #1B242F;
     color: white;
-    height: 50px;
+    min-height: 50px;
 }
 
 #author {
@@ -505,6 +505,33 @@ footer {
         display: inline-block;
         width: 200px;
         margin: 5px;
+    }
+
+    #form-tagline {
+        font-size: 16px;
+    }
+
+    .form-line {
+        min-width: 300px;
+        line-height: 40px;
+        font-size: .9rem;
+    }
+
+    footer {
+        min-height: none;
+    }
+    
+    #author {
+        display: block;
+        text-align: center;
+        color: #5f656d;
+        font-size: .8rem;
+    }
+    
+    #social-links {
+        text-align: center;
+        font-size: .6rem;
+        float: none;
     }
   }
 

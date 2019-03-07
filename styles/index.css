@@ -152,8 +152,10 @@ header {
 
 #work-button {
     background-color: transparent;
-    font-size: 4.5vw;
+    font-size: 1.5rem;
     font-weight: lighter;
+    line-height: 40px;
+    text-transform: uppercase;
     color: white;
     border: 2px solid white;
     padding: 5px 10px 5px 10px;
@@ -505,6 +507,11 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
+    #work-button {
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
     #profile-text-container {
         margin: 0 auto;
         width: 80%;
